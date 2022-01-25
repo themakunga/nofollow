@@ -26,3 +26,7 @@ trim_trailing_whitespace = unset
 
 [{test/fixtures,deps,tools/node_modules,tools/gyp,tools/icu,tools/msvs}/**]
 insert_final_newline = false
+
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = true

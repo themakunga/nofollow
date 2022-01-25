@@ -1,0 +1,16 @@
+git:
+  commitMessage: "chore: relase v${version}"
+  tag: true
+  push: true
+  pushArgs:
+    - --follow-tags
+  requireCleanWorkingDir: true
+github:
+  release: true
+plugins:
+  '@release-it/conventional-changelog':
+    preset: angular
+    infile: CHAGELOG.md
+npm:
+  publish: false
+
