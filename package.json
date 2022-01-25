@@ -1,0 +1,59 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "src/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "NODE_ENV=test jest",
+    "lint": "eslint ./ --ext .js,.json --ignore-path .gitignore",
+    "lint:fix": "eslint ./ --ext .js,.json --ignore-path .gitignore --fix",
+    "changelog": "auto-changelog -p",
+    "semantic-release": "semantic-release"
+  },
+  "author": "",
+  "contributors": [
+    {
+      "name": "Nicolas Martinez V.",
+      "email": "pedro.martinez4@walmart.com",
+      "url": "https://github.com/themakunga"
+    }
+  ],
+  "engines": {
+    "node": "16.10.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "auto-changelog": "^2.3.0",
+    "babel-eslint": "^10.1.0",
+    "consola": "^2.15.3",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-json": "^3.1.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^14.3.0",
+    "fastify": "^3.27.0",
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAliases": {
+    "~": "./",
+    "@@": "src",
+    "@config": "src/config",
+    "@controllers": "src/controllers",
+    "@models": "src/models",
+    "@repositories": "src/repositories",
+    "@routes": "src/routes",
+    "@utils": "src/utils"
+  }
+}
